@@ -9,7 +9,7 @@
 
 ### Gradle ###
 .gradle
-build/
+# build/
 .vscode/
 
 # Ignore Gradle GUI config
@@ -25,7 +25,7 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 ### Gradle Patch ###
-**/build/
+# **/build/
 
 ### Node
 npm-debug.log

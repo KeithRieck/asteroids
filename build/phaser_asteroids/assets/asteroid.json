@@ -1,0 +1,39 @@
+{"frames": {
+
+"ASTEROID_LARGE":
+{
+	"frame": {"x":2,"y":2,"w":64,"h":64},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+	"sourceSize": {"w":64,"h":64},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"ASTEROID_MEDIUM":
+{
+	"frame": {"x":2,"y":68,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"ASTEROID_SMALL":
+{
+	"frame": {"x":36,"y":68,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "asteroid.png",
+	"format": "RGBA8888",
+	"size": {"w":68,"h":102},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1d870dacd63e5b02a9ae3fcd10fc94ca:c3b9ad15b2e7e06ccf759451f398d89f:fc1275ebf00c1c41e77ba8840fa76592$"
+}
+}
