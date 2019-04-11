@@ -1,0 +1,37 @@
+
+# Created by https://www.gitignore.io/api/gradle
+# Edit at https://www.gitignore.io/?templates=gradle
+
+## General
+*.bak
+*~
+.DS_Store
+
+### Gradle ###
+.gradle
+build/
+.vscode/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+### Gradle Patch ###
+**/build/
+
+### Node
+npm-debug.log
+node_modules/
+
+## Eclipse
+.settings/
+.project
+.classpath

@@ -1,0 +1,51 @@
+import com.moowork.gradle.node.NodeExtension
+import com.moowork.gradle.node.variant.VariantBuilder
+
+plugins {
+  id "com.moowork.node" version "0.12"
+  id "de.richsource.gradle.plugins.typescript" version "1.8.0"
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+}
+
+task clean(type: Delete) {
+	  description = 'clean out build directory'
+    delete rootProject.buildDir
+}
+
+task build(type: Copy) {
+	description = 'create app in build directory'
+	dependsOn compileTypeScript
+	from 'src/main/webapp'
+	into 'build/phaser_asteroids'
+}
+
+node {
+  download = true
+}
+
+String nodeExecutable() {
+  NodeExtension nodeExt = NodeExtension.get(project)
+  return new VariantBuilder(nodeExt).build().nodeExec
+}
+
+compileTypeScript {
+	dependsOn "npmInstall"
+	// module = 'UMD'
+	target = 'ES5'
+	compilerExecutable "${nodeExecutable()} node_modules/typescript/lib/tsc.js"
+	source = [file("src/main/ts"), file("src/main/webapp/phaser/2.12.0/phaser.comments.d.ts")]
+	outputDir = new File(rootProject.buildDir, 'phaser_asteroids')
+	// experimentalDecorators = true
+	// preserveConstEnums = true
+	// rootDir = new File('src/main/ts')
+	// suppressImplicitAnyIndexErrors = true
+	// noEmitHelpers = true
+	// inlineSourceMap = true
+	// inlineSources = true
+}

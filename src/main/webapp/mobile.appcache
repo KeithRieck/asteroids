@@ -1,0 +1,14 @@
+CACHE MANIFEST
+asteroids.js
+assets/asteroid.json
+assets/asteroid.png
+assets/background.png
+assets/blaster.mp3
+assets/bullet.png
+assets/explosion.mp3
+assets/ship.json
+assets/ship.png
+mobile_icon.png
+mobile_startup.png
+../../js/phaser/2.4.6/phaser.min.js
+../../css/responsive_canvas.css
